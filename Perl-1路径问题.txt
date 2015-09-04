@@ -1,0 +1,16 @@
+
+##获取当前的系统路径
+#方法1，使用环境变量，多用于linux下
+print $ENV{'PWD'};
+#方法2，使用Cwd包，可以跨平台
+use Cwd;
+print getcwd;
+
+
+#案例
+use Cwd;
+print getcwd ;
+print"\nhello,world";
+
+#修改文件路径，获取当下路径的文件名列表
+#文件名通配
