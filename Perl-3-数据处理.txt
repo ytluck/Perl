@@ -1,0 +1,53 @@
+bulit
+  构造
+  变量访问 
+	访问数组中元素 下标引用[]
+	访问哈希中元素  单个哈希$hash{$some-key}
+			整个哈希%hash
+  引用 创造引用的两种情况 反斜杠\   
+			  匿名引用 匿名数组 匿名哈希
+  赋值
+
+标量   字符串处理：
+	chop()	chomp()
+	chr()	ord()
+	index() rindex()
+	lc()	uc()	小写 大写
+	lcfirst() ucfirst()	首字母大小写
+	length()		scalar()
+	substr()
+	tr///	y///
+	print printf sprintf
+	操作符	x	.	++		--	..
+		+ - * /  **  %		>> ~ eq nq lt gt
+		abs()	exp() hex()
+		rand()	srand()
+
+数组和列表
+		数组  指的是变量
+	列表 :是一种特殊类型的数组表示标量的有序集合
+	 生成方式：一是 在代码中已经预先定义好的、用逗号分隔开的值 
+		     二是 针对某特定列表上下文进行求值的返回值
+	list literal 列表直接量  列表元素
+	列表操作
+ 	sort 操作符 
+	each 操作符 提取哈希键-值对
+		    数组调用 返回数组中下一个元素所对应的两个值 该元素的索引以及该元素的值
+	pop() 弹出并返回一个数组结尾后的最后一个值  shift()
+	push()将一个或者多个数值			  unshift()
+	split() 利用一个字符串拆分一个列表 join()
+	grep() map()
+	处理模块：
+	Perl中有一些专门用于处理列表数据的模块，比如说List::Util模块，List::MoreUtils模块
+	List::Util模块包含在标准库中，能提供各种高效的常见列表处理工具。
+ 	因其用C语言来实现，速度一般都挺快！
+	sum 求和  范围操作符 ..
+	shuffle 对列表的元素进行随机排序
+	List::MoreUtils
+     列表上下文
+     数组切片  []
+哈希函数 
+  keys()	value()
+  each()
+  exists() 是否存在某个键
+  delete() 删除指定的键以及对应的值

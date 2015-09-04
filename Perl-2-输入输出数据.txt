@@ -1,0 +1,40 @@
+####2015-09-04
+####键盘-标准输入
+$line = <STDIN>;
+chomp($line);
+print $line;
+
+####读取文件
+##1以文件中一行为读取单元，逐行读入
+open(IN, "$file");
+while($line = <IN>){
+  chomp($line);
+  #在屏幕上输出$line的内容
+  print $line . "\n";
+  }
+close(IN);
+##2一次性读入整个文件
+open (IN, "$file");
+@line = <IN>;
+chomp(@lines);
+close(IN);
+#在屏幕上逐行显示
+foreach $Line (@lines){
+ print "$Line\n";
+ }
+
+####案例：读取csv数据
+  use strict;
+  my ($file) = @_;
+  open IN, '<',"$file" or die "Can not open file: $file";
+       my $line = <IN>;
+	while ($line = <IN>)
+	{
+	chomp ($line);
+	my ($cell,$gene,$PAS,$count ) = split(/\,/, $line);
+	}
+	close IN;
+#注意事项
+use strict #要求我们事先声明 所有用的变量
+	  #或者是在使用时 使用完整的包名加变量名
+		

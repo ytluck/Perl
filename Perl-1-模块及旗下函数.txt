@@ -1,0 +1,49 @@
+ 下载安装好perl后，设置环境变量，然后把cmd下的路径转到源程序所在的文件夹下
+ 这样就可以运行了。
+
+ 查看已下载安装的所有模块	（重定向到一个文件内，以便于观察）
+ cpan -a >> E:\C1计算机技能\Perl以及正则表达式\aa.txt
+
+ 或者ppm 然后用界面查看安装下载的模块
+
+ 查看已下载的某一模块
+ perldoc List::Uti ;
+
+ 加载某模块
+ use List::Uti
+ 加载某模块的部分函数
+ use List::Util ("sum");
+ 卸载某模块
+ no List::Uti ;
+ 
+ 下载安装某模块（windows）
+ ppm    #出现图形界面
+# 或者使用
+ cpan
+
+#模块及函数说明
+#对数据的操作
+#获取说明 perldoc List::Util	
+		Perldoc –f my
+#构建列表：qw(quoted word )加上引号的单词
+use strict;  #编译指令使用约束规则
+#is an alias for 别名
+#标量
+#列表和数组
+#内置的函数以及模块函数
+#内置函数per
+#模块：List::Util	 
+ # sum  求和
+ # shuffle对列表中的元素随机排序
+ # max : 求最大值
+ # min
+ # maxstr ： 按照字符串排列的  最大值
+ # minstr
+#仅选用模块中的部分函数use List::Util qw(sum);
+#模块：	List::MoreUtils 
+  use List::MoreUtils qw(pairwise); #两个列表的同步计算
+use List::MoreUtils qw(each_array); #三个列表的同步计算
+use List::MoreUtils qw(mesh); #合并多个数组
+#first_index is an alias for firstidx
+#哈希
+
